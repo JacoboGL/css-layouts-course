@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -39,7 +45,6 @@ header .header-icons {
     align-items: center;
     justify-content: space-evenly;
     justify-self: end;
-    margin-right: 50px;
 }
 
 header .header-icons img {
@@ -55,24 +60,76 @@ header nav {
 }
 
 header .nav-logo-container {
-    margin-left: 50px;
+    margin-left: 50%;
+    height: 90px;
 }
 
 header .nav-logo-container img {
-    width: 150px;
+    width: 120px;
     margin-top: 20px;
 }
 
 header .profile-link {
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 50%;
+    margin-top: 55px;
 }
 
 header .profile-link a {
+    font-size: 1.6rem;
     font-weight: bold;
-    color: black;
+    color: rgb(41, 41, 41);
     border-bottom: 1px solid black;
+}
+
+/* HERO */
+.home-main {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+}
+
+.home-main img {
+    position: absolute;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.hero-text-container {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+
+.hero-text-container p {
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 6px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+.hero-text-container button {
+    border: none;
+    border-radius: 12px;
+    height: 50px;
+    padding: 0 30px 0;
+    background-color: rgb(154, 247, 195);
+}
+
+.hero-text-container button a {
+    color: rgb(75, 75, 75);
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.hero-text-container button:hover{
+    scale: 1.1;
 }
