@@ -133,3 +133,13 @@ header .profile-link a {
 .hero-text-container button:hover{
     scale: 1.1;
 }
+
+/* PROJECTS PAGE */
+
+.projects-main-container {
+    display: grid;
+}
+
+.work-container {
+    background-color: gainsboro;
+}
